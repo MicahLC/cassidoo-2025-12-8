@@ -9,7 +9,7 @@ namespace cassidoo_2025_12_8
         {
 			foreach (string c in cards)
 			{
-				c.Length.Should().BeInRange(2, 3);
+				c.Length.Should().BeInRange(3, 4, c);
 			}
 		}
 
@@ -87,6 +87,7 @@ namespace cassidoo_2025_12_8
             allSame.Should().BeFalse();
         }
 
+        [TestMethod]
         public void TestShuffleAndDraw()
         {
             Deck d = new Deck();

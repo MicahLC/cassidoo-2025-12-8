@@ -96,6 +96,11 @@ namespace cassidoo_2025_12_8
             hand5.Should().HaveCount(5);
             d.cards.Should().HaveCount(52 - 5);
             CheckDistinct(hand5, d.cards);
+            d.Shuffle();
+            string[] hand10 = d.Draw(10);
+            hand10.Should().HaveCount(10);
+            d.cards.Should().HaveCount(52 - 5 - 10);
+            CheckDistinct(hand10, hand5);
         }
     }
 }

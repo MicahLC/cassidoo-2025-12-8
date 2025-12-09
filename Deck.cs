@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace cassidoo_2025_12_8
+﻿namespace cassidoo_2025_12_8
 {
 	public class Deck
 	{

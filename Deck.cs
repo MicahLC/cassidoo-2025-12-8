@@ -54,6 +54,7 @@ namespace cassidoo_2025_12_8
 			int length = cards.Length;
 			for(int i = 0; i < length; ++i)
 			{
+				// Let's do a swap for every index, that'll be sufficient.
 				int swapIndex = random.Next(length - 1);
 				if (swapIndex == i)
 				{
